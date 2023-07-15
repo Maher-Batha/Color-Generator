@@ -1,0 +1,76 @@
+body {
+  background-color: #f8fafc;
+}
+.color-generator-project {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.color-generator-project .form-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 767px) {
+  .color-generator-project .form-section {
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+}
+.color-generator-project .form-section .form-title {
+  color: #0f172a;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.color-generator-project .form-section .color-form {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.color-generator-project .form-section .color-form input {
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.color-generator-project .form-section .color-form input[type="color"] {
+  padding-right: 0.25rem;
+}
+.color-generator-project .form-section .color-form input[type="text"] {
+  background: white;
+  width: 15rem;
+  max-width: 100%;
+  padding-left: 0.5rem;
+}
+.color-generator-project .form-section .color-form .submit-btn {
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #645cff;
+  color: #fff;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.color-generator-project .colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.color-generator-project .colors .color {
+  padding: 1rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+.color-generator-project .colors .color .percent-value,
+.color-generator-project .colors .color .color-value {
+  color: #0f172a;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.color-generator-project .colors .color.color-light .percent-value,
+.color-generator-project .colors .color.color-light .color-value {
+  color: #fff;
+}
